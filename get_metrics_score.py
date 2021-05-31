@@ -1,9 +1,12 @@
+from sklearn.metrics import precision_score
+
 ##  Function to calculate different metric scores of the model - Accuracy, Recall and Precision
 def get_metrics_score(model,flag=True):
     '''
     model : classifier to predict values of X
 
     '''
+    X_train, X_test, y_train, y_test = None
     # defining an empty list to store train and test results
     score_list=[] 
     
